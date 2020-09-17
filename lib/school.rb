@@ -13,7 +13,11 @@ class School
     if !@roster [student_grade]
       @roster[student_grade] = []
     end 
-      return @roster[student_grade] << student_name
+      @roster[student_grade] << student_name
+  end 
+  
+  def grade(grade)
+    @roster[grade]
   end 
 
 end 
